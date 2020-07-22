@@ -18,6 +18,7 @@
   "homepage": "https://github.com/GSP-samurai/Project#readme",
   "devDependencies": {
     "browser-sync": "^2.26.10",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
   }
 }
