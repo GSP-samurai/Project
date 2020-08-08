@@ -15,11 +15,21 @@
     "gulp-autoprefixer": "^6.1.0",
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
     "normalize.css": "^8.0.1"
   },
   "dependencies": {
     "slick-carousel": "^1.8.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSP-samurai/Project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GSP-samurai/Project/issues"
+  },
+  "homepage": "https://github.com/GSP-samurai/Project#readme"
 }

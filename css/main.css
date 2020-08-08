@@ -1,0 +1,15 @@
+a {
+  color: #000;
+  font-size: 15px;
+  width: 10px; }
+  a:hover {
+    background-color: #000;
+    height: 10px;
+    display: block; }
+
+p {
+  font-style: 25px;
+  background-color: #000;
+  color: #ffffff; }
+
+/*# sourceMappingURL=main.css.map */
