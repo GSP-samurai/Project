@@ -400,8 +400,24 @@ template {
   color: #ffffff;
 }
 
+@font-face {
+  font-family: 'Futura Book';
+  src: url("/fonts/futura/FuturaBookC.woff") format("woff"), url("/fontsuturauturaBookC.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+
+@font-face {
+  font-family: 'Futura Demi';
+  src: url("/fontsuturauturaDemiC.woff") format("woff"), url("/fontsuturauturaDemiC.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Futura Book', sans-serif;
   font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
