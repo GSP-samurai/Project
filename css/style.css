@@ -4,6 +4,11 @@
 }
 
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
   background-color: #131313;
   padding: 24px 0px;
 }
@@ -414,6 +419,47 @@ template {
   font-weight: normal;
   font-style: normal;
   font-display: wrap;
+}
+
+.hero {
+  padding-top: 100px;
+  position: relative;
+  background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
+  height: 100vh;
+  color: #ffffff;
+}
+
+.hero__instagram {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 90px;
+  height: 100%;
+}
+
+.instagram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #131313;
+}
+
+.instagram__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #E3B873;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.title {
+  margin: 0;
 }
 
 body {
