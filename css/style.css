@@ -686,12 +686,34 @@ img {
   margin: 0 0.786rem;
 }
 
+.section-title__description {
+  font-family: 'Futura Book', sans-serif;
+  font-size: 1.428rem;
+  line-height: 1.928rem;
+  color: #131313;
+  text-align: center;
+  max-width: 52.928rem;
+  margin-bottom: 1.9rem;
+}
+
+.section-title__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 h2 {
   font-size: 1.43rem;
 }
 
 .types__section-title {
-  margin-bottom: 2rem;
+  margin-bottom: 2.2rem;
 }
 
 .row {
@@ -716,13 +738,15 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-preferred-size: fill;
+      flex-basis: fill;
 }
 
 .card__text {
   position: relative;
-  max-width: 21.6rem;
+  max-width: 23.7rem;
   margin: 0 auto;
-  margin-top: -9.1rem;
+  margin-top: -9.4rem;
   padding: 1.78rem 2.42rem;
   background-color: #fff;
   -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
@@ -737,7 +761,7 @@ h2 {
 }
 
 .card__list {
-  padding: 0 0 0 1rem;
+  padding: 0 0 0 1.3rem;
   margin: 0;
   font-size: 1.07rem;
   line-height: 1.8rem;
@@ -748,15 +772,27 @@ h2 {
 .card__pricetag {
   position: absolute;
   left: 0;
-  bottom: -1.79rem;
+  bottom: -1.7rem;
   font-size: 1.29rem;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #E3B873;
-  padding: 1.214rem 2.6rem;
+  padding: 1.214rem 4.285rem;
   -webkit-box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
           box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+}
+
+.card__first {
+  padding: 1.214rem 2.9rem;
+}
+
+.card__second {
+  padding: 1.214rem 2.7rem;
+}
+
+.card__third {
+  padding: 1.214rem 2.5rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -839,5 +875,10 @@ h2 {
   .hero__buttons {
     margin-left: -20px;
   }
+}
+
+.card__design-image {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
 }
 /*# sourceMappingURL=style.css.map */
