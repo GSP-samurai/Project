@@ -406,6 +406,8 @@ template {
   border-radius: 2px;
   text-transform: uppercase;
   font-size: 0.93rem;
+  opacity: 1;
+  visibility: visible;
 }
 
 .button:hover {
@@ -445,7 +447,6 @@ template {
   transition: -webkit-box-shadow 0.7s;
   transition: box-shadow 0.7s;
   transition: box-shadow 0.7s, -webkit-box-shadow 0.7s;
-  padding: 1.29rem 2rem;
   padding: 0.857rem 1.642rem;
   border: none;
   border-radius: 2px;
@@ -457,6 +458,42 @@ template {
   cursor: pointer;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.button--up {
+  font-size: 16px;
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  z-index: 198;
+  right: 20px;
+  bottom: 20px;
+  position: fixed;
+  background-color: #E3B873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  -webkit-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s, -webkit-box-shadow 0.3s;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s, -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s, background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  transition: box-shadow 0.3s, background-color 0.3s, opacity 0.5s, visibility 0.5s, -webkit-box-shadow 0.3s;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.button--up:hover {
+  cursor: pointer;
+  background-color: #dfa03c;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.button--up:active {
+  background-color: #ffd693;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .label {
@@ -490,6 +527,11 @@ template {
 
 .input::placeholder {
   color: #ffffff;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 @font-face {

@@ -4,6 +4,8 @@
     border-radius: 2px
     text-transform: uppercase
     font-size: 0.93rem
+    opacity: 1
+    visibility: visible
     &:hover
         cursor: pointer
     &--primary
@@ -24,7 +26,6 @@
         color: $light
         box-shadow: 0px 5px 15px rgba($primary, 0.2)
         transition: box-shadow 0.7s
-        padding: 1.29rem 2rem
         padding: 0.857rem 1.642rem
         border: none
         border-radius: 2px
@@ -33,6 +34,29 @@
         &:hover
             cursor: pointer
             box-shadow: none
+    &--up
+        font-size: 16px
+        display: inline-block
+        width: 200px
+        height: 50px
+        z-index: 198
+        right: 20px
+        bottom: 20px
+        position: fixed
+        background-color: #E3B873
+        box-shadow: 0px 5px 15px rgba($primary, 0.2)
+        transition: box-shadow 0.3s, background-color 0.3s, opacity 0.5s, visibility 0.5s
+        border-radius: 4px
+        opacity: 0
+        visibility: hidden
+        &:hover
+            cursor: pointer
+            background-color: #dfa03c
+            box-shadow: none
+            transition: background-color 0.3s
+        &:active
+            background-color: #ffd693
+            transition: background-color 0.3s
 .label
     font-size: 1.07rem
     &--light
@@ -46,3 +70,6 @@
     padding: 0.571rem 0
     &::placeholder
         color: $light
+.show
+    opacity: 1
+    visibility: visible
