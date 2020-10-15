@@ -585,6 +585,14 @@ template {
   visibility: visible;
 }
 
+label.invalid {
+  color: tomato;
+}
+
+input.invalid {
+  border-bottom: 1px solid tomato;
+}
+
 @font-face {
   font-family: 'Futura Book';
   src: url("/fonts/futura/FuturaBookC.woff") format("woff"), url("/fontsuturauturaBookC.woff2") format("woff");
@@ -867,6 +875,13 @@ h2 {
   margin-bottom: 2.2rem;
 }
 
+.card {
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
 .card__text {
   position: relative;
   max-width: 23.7rem;
@@ -985,7 +1000,14 @@ h2 {
           flex-direction: column;
 }
 
-.modal__input {
+.modal__input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 3.428rem;
 }
 
@@ -1312,8 +1334,10 @@ h2 {
   line-height: 1.428rem;
 }
 
-.section--dark {
+.section--footer {
   padding-top: 4.3rem;
   background: #131313 url("/img/footer-bg.jpg") no-repeat center/cover;
+  background-color: #131313;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

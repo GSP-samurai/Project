@@ -51,7 +51,7 @@ $(document).ready(function () {
             prevEl: '.swiper-button-prev',
         },
     })
-
+    
     var next = $('.swiper-button-next');
     var prev = $('.swiper-button-prev');
     var bullets = $('.swiper-pagination');
@@ -60,5 +60,32 @@ $(document).ready(function () {
     bullets.css('left', prev.width() + 10 )
 
     new WOW().init();
+
+    // Валидация формы
+    $('.modal__form').validate({
+        errorClass: "invalid",
+        rules: {
+            // Строчное правило
+            userName: "required",
+            userPhone: "required",
+            // Правило-объект (блок)
+            userEmail: {
+              required: true,
+              email: true
+            }
+        }, // Сообщения
+        messages: {
+            userName: "Имя обязательно",
+            userPhone: "Телефон обязателен",
+            userEmail: {
+                required: "Обязательно укажите ваш Email",
+                email: "Введите в формате: name@domain.com"
+        }
+        }
+    });
+
+    // Маска для номера телефона
+
+    $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
 
 });
