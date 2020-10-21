@@ -80,7 +80,20 @@ $(document).ready(function () {
             userEmail: {
                 required: "Обязательно укажите ваш Email",
                 email: "Введите в формате: name@domain.com"
-        }
+            }
+        },
+        submitHandler: function(form) {
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $('form').serialize(),
+                success: function (response) {
+                    console.log('Ajax сработал. Ответ сервера: ' + response);
+                    alert('Форма отправлена, мы свяжемся с вами в течение 10 минут');
+                    $(form)[0].reset();
+                    modal.removeClass('modal--visible');
+                }
+            });
         }
     });
 
