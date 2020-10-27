@@ -615,7 +615,7 @@ input.invalid {
   src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fontsuturauturaBookC.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: wrap;
+  font-display: swap;
 }
 
 @font-face {
@@ -623,7 +623,7 @@ input.invalid {
   src: url("../fontsuturauturaDemiC.woff") format("woff"), url("../fontsuturauturaDemiC.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: wrap;
+  font-display: swap;
 }
 
 .hero {
@@ -799,6 +799,7 @@ img {
 .section--dark {
   background-color: #131313;
   color: #ffffff;
+  padding-bottom: 28.571rem;
 }
 
 .section-title {
@@ -812,12 +813,18 @@ img {
 .section-title__heading {
   text-transform: uppercase;
   font-family: 'Yeseva One', cursive;
+  font-weight: normal;
   line-height: 138.6%;
   margin-bottom: 0.857rem;
 }
 
 .section-title__heading--primary {
   color: #E3B873;
+}
+
+.section-title__heading--control {
+  color: #ffffff;
+  margin-left: 0.4rem;
 }
 
 .section-title__word {
@@ -1026,6 +1033,7 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 0.7rem;
 }
 
 .modal__input-group {
@@ -1097,6 +1105,17 @@ h2 {
   font-size: 1.142rem;
   line-height: 1.552rem;
   margin-right: 1.7rem;
+}
+
+.policy__label--control {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.142rem;
+  line-height: 1.552rem;
+  margin-right: 4.5rem;
 }
 
 .boxes {
@@ -1271,6 +1290,15 @@ h2 {
   background: url("/img/arrow-next.svg") no-repeat center;
 }
 
+.footer__50 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .footer__menu {
   background-color: #131313;
   padding: 3.35rem 0;
@@ -1340,11 +1368,13 @@ h2 {
 }
 
 .footer__button {
-  text-transform: uppercase;
+  display: block;
   margin: auto;
-  padding: 0.9rem 4.4rem;
+  text-transform: uppercase;
+  padding: 0.87rem 3.9rem;
   border: none;
   border-radius: 0;
+  font-family: 'Futura Demi', sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 1.071rem;
@@ -1605,5 +1635,124 @@ h2 {
   background-color: #E3B873;
   margin: auto;
   margin-bottom: -0.7rem;
+}
+
+.control {
+  margin-top: -28.7rem;
+}
+
+.control__line {
+  width: 55px;
+  height: 2px;
+  background-color: #E3B873;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.control__video {
+  margin: auto;
+  position: relative;
+  max-width: 58.357rem;
+  min-height: 31rem;
+  margin-top: 2.2rem;
+  margin-bottom: 4.464rem;
+  background: #131313 url("/img/video-mask.jpg") center no-repeat;
+  -webkit-box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.control__video::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.control__text {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.428rem;
+  line-height: 2.425rem;
+  text-align: center;
+  max-width: 40.785rem;
+  max-height: 11.571rem;
+  margin: auto;
+  margin-bottom: 4.73rem;
+}
+
+.control__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 55rem;
+  margin: auto;
+  margin-bottom: 0.7rem;
+}
+
+.control__input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.control__label {
+  margin-bottom: -7px;
+}
+
+.control__button {
+  width: 14.285rem;
+  height: 3.7rem;
+  padding: 1.2857rem 4.7857rem;
+}
+
+.control__policy {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-top: 1.03rem;
+}
+
+.control__span {
+  display: block;
+  width: 40.714rem;
+}
+
+.control__input {
+  padding-top: 0.7rem;
+  color: #131313;
+}
+
+.control__input::-webkit-input-placeholder {
+  color: #131313;
+}
+
+.control__input:-ms-input-placeholder {
+  color: #131313;
+}
+
+.control__input::-ms-input-placeholder {
+  color: #131313;
+}
+
+.control__input::placeholder {
+  color: #131313;
+}
+
+.video__play {
+  position: absolute;
+  margin-top: 10.63rem;
+  margin-left: 23.96rem;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
