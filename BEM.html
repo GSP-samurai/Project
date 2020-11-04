@@ -6,7 +6,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Проект</title>
 </head>
@@ -53,15 +52,15 @@
         </section>
         <section class="section projects section--dark">
             <div class="container">
-                <div class="row">
-                    <div class="col__50 wow">
+                <div class="row projects__row">
+                    <div class="col__50 col__50--text wow">
                         <div class="section-title section-title--left">
                             <h2 class="section-title__heading section-title__heading--primary">Завершенные <span class="section-title__word">проекты</span></h2>
                             <!-- /.section-title__heading -->
                             </div>
                             <!-- /.section-title -->
                             <p class="section-title__text">На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14 лет работы на строительном рынке мы осчастливили более 1000 семей</p>
-                            <div class="swiper-container">
+                            <div class="swiper-container swiper-container--left">
                                 <!-- Additional required wrapper -->
                                 <div class="swiper-wrapper swiper-no-swiping">
                                     <!-- Slides -->
@@ -74,11 +73,11 @@
                                             <h3 class="swiper-slide__headling">Площадь:</h3>
                                             <span class="swiper-slide__value">81 м2</span>
                                         </div>
-                                        <div class="swiper-slide__text">
+                                        <div class="swiper-slide__text swiper-slide__text--bottom">
                                             <h3 class="swiper-slide__headling">Срок ремонта:</h3>
                                             <span class="swiper-slide__value">3,5 месяца</span>
                                         </div>
-                                        <div class="swiper-slide__text">
+                                        <div class="swiper-slide__text swiper-slide__text--bottom">
                                             <h3 class="swiper-slide__headling">Стоимость:</h3>
                                             <span class="swiper-slide__value">По запросу</span>
                                         </div>
@@ -86,17 +85,17 @@
                                     <div class="swiper-slide">
                                         <div class="swiper-slide__text">
                                             <h3 class="swiper-slide__headling">Город:</h3>
-                                            <span class="swiper-slide__value">Ростов-на-Дону<br>ЖК Адмирал</span>
+                                            <span class="swiper-slide__value">Казань<br>ЖК Арт Сити</span>
                                         </div>
                                         <div class="swiper-slide__text">
                                             <h3 class="swiper-slide__headling">Площадь:</h3>
-                                            <span class="swiper-slide__value">81 м2</span>
+                                            <span class="swiper-slide__value">66 м2</span>
                                         </div>
-                                        <div class="swiper-slide__text">
+                                        <div class="swiper-slide__text swiper-slide__text--bottom">
                                             <h3 class="swiper-slide__headling">Срок ремонта:</h3>
-                                            <span class="swiper-slide__value">3,5 месяца</span>
+                                            <span class="swiper-slide__value">5 месяцев</span>
                                         </div>
-                                        <div class="swiper-slide__text">
+                                        <div class="swiper-slide__text swiper-slide__text--bottom">
                                             <h3 class="swiper-slide__headling">Стоимость:</h3>
                                             <span class="swiper-slide__value">По запросу</span>
                                         </div>
@@ -104,17 +103,17 @@
                                     <div class="swiper-slide">
                                         <div class="swiper-slide__text">
                                             <h3 class="swiper-slide__headling">Город:</h3>
-                                            <span class="swiper-slide__value">Ростов-на-Дону<br>ЖК Адмирал</span>
+                                            <span class="swiper-slide__value">Санкт-Петербург<br>ЖК Галактика</span>
                                         </div>
                                         <div class="swiper-slide__text">
                                             <h3 class="swiper-slide__headling">Площадь:</h3>
-                                            <span class="swiper-slide__value">81 м2</span>
+                                            <span class="swiper-slide__value">97 м2</span>
                                         </div>
-                                        <div class="swiper-slide__text">
+                                        <div class="swiper-slide__text swiper-slide__text--bottom">
                                             <h3 class="swiper-slide__headling">Срок ремонта:</h3>
-                                            <span class="swiper-slide__value">3,5 месяца</span>
+                                            <span class="swiper-slide__value">7 месяца</span>
                                         </div>
-                                        <div class="swiper-slide__text">
+                                        <div class="swiper-slide__text swiper-slide__text--bottom">
                                             <h3 class="swiper-slide__headling">Стоимость:</h3>
                                             <span class="swiper-slide__value">По запросу</span>
                                         </div>
@@ -127,7 +126,7 @@
                     </div>
                     </div>
                     <div class="col__50 col__50--pic wow">
-                        <div class="swiper-container">
+                        <div class="swiper-container swiper-container--right">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper swiper-no-swiping">
                                 <!-- Slides -->
@@ -135,10 +134,10 @@
                                     <img src="/img/project.jpg" alt="project">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="/img/project.jpg" alt="project">
+                                    <img src="/img/project2.jpg" alt="project">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="/img/project.jpg" alt="project">
+                                    <img src="/img/project3.jpg" alt="project">
                                 </div>
                             </div>
                         </div>
@@ -605,7 +604,6 @@
 <script src="/js/wow.min.js"></script>
 <script src="/js/jquery.validate.min.js"></script>
 <script src="/js/jquery.mask.min.js"></script>
-<script src="/js/jquery.fancybox.min.js"></script>
 <script src="/js/main.js"></script>
 </body>
 </html>
